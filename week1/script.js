@@ -45,8 +45,8 @@ let myArray = [];
 console.log("the value of an array is multiple values");
 console.log(myArray);
 let myFavoriteAnimals = ["dogs", "cats", "dinosaurs"];
-console.log(myFavoriteAnimals[2]);
-myFavoriteAnimals.push("Daan's favorite animal is a baby pig");
+console.log(myFavoriteAnimals);
+myFavoriteAnimals.push("baby pig");
 console.log(myArray);
 
 //7
