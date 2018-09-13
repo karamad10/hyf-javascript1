@@ -1,7 +1,6 @@
 //1
 console.log("Hello World");
 console.log("Hallo wereld");
-console.log("Hola Mundo");
 console.log("Hallo welt");
 
 //2
