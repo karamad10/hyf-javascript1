@@ -69,7 +69,7 @@ console.log(type4);
 if (type1 === type2) {
     console.log('SAME TYPE');
 }
-else { console.log('DIFFERENT TYPES') };   // || type1 === type3 || type1 === type4 || type3 === type2
+else { console.log('DIFFERENT TYPES') };   
 
 if (type1 === type3) {
     console.log('SAME TYPE');
