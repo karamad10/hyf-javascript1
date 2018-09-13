@@ -134,3 +134,9 @@ console.log("The output will be 'someValue' ")
 console.log(multipleValues[0]);
 console.log("The output will be '3' ")
 console.log(multipleValues[3][2]);
+
+if (6 / 0 === 10 / 0) {
+    console.log('Yes, i can compare infinities');
+} else {
+    console.log("no, i can't compare  infinities");
+};
