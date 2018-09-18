@@ -1,7 +1,6 @@
 //1
 console.log("Hello World");
 console.log("Hallo wereld");
-console.log("Hola Mundo");
 console.log("Hallo welt");
 
 //2
@@ -46,7 +45,7 @@ console.log("the value of an array is multiple values");
 console.log(myArray);
 let myFavoriteAnimals = ["dogs", "cats", "dinosaurs"];
 console.log(myFavoriteAnimals);
-myArray.push("Daan's favorite animal is a baby pig");
+myFavoriteAnimals.push("baby pig");
 console.log(myArray);
 
 //7
@@ -69,7 +68,7 @@ console.log(type4);
 if (type1 === type2) {
     console.log('SAME TYPE');
 }
-else { console.log('DIFFERENT TYPES') };   // || type1 === type3 || type1 === type4 || type3 === type2
+else { console.log('DIFFERENT TYPES') };   
 
 if (type1 === type3) {
     console.log('SAME TYPE');
@@ -134,3 +133,9 @@ console.log("The output will be 'someValue' ")
 console.log(multipleValues[0]);
 console.log("The output will be '3' ")
 console.log(multipleValues[3][2]);
+
+if (6 / 0 === 10 / 0) {
+    console.log('Yes, i can compare infinities');
+} else {
+    console.log("no, i can't compare  infinities");
+};
