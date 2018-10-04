@@ -9,7 +9,7 @@ console.log(myString);
 let favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];
 favoriteAnimals.push("turtle");
 console.log(favoriteAnimals);
-favoriteAnimals.splice([1], 0, 'meerkat');
+favoriteAnimals.splice(1, 0, 'meerkat');
 console.log(favoriteAnimals);
 let favoriteAnimalsLength = (favoriteAnimals.length);
 console.log('The array has a length of ' + favoriteAnimalsLength);
@@ -21,43 +21,42 @@ console.log('The item you are looking for is at index: ' + indexOfMeerkat);
 //More JavaScript
 // 1
 
-function myFunction(a, b, c, ) {
-  return (a + b + c);
+function sum(a, b, c) {
+    return a + b + c;
 };
 
-console.log(myFunction(100, 100, 100));
+console.log(sum(100, 100, 100));
 
 //2
 
-function coloredCar() {
-  const color = ('red ')
-  console.log('a ' + color + 'car ');
+function coloredCar(color) {
+    console.log('a ' + color + 'car ');
 };
-coloredCar();
+coloredCar('red ');
 
 //3
 
-function myFunction2() {
-  let vehicle = {
-    type: "Nissan",
-    model: "350z",
-    color: 'matte black'
-  };
-  console.log(vehicle);
+function myCarFunc(type, model, color) {
+    let vehicle = {
+        type: '',
+        model: '',
+        color: ''
+    };
+    console.log(vehicle.type + 'Nissan' + vehicle.model + ' 350z' + vehicle.color + ' matte black');
 };
-myFunction2();
+myCarFunc();
 
 //4
 
 function vehicleType(color, code) {
-  if (code === 1) {
-    console.log('a ' + color + ' Motorbike');
-  }
-  if (code === 2) {
-    console.log('a ' + color + 'Car');
-  }
+    if (code === 1) {
+        console.log('a ' + color + ' Motorbike');
+    }
+    if (code === 2) {
+        console.log('a ' + color + ' Car');
+    }
 };
-vehicleType('Blue', 1);
+vehicleType('Blue', 2);
 
 //5
 
@@ -65,26 +64,26 @@ console.log(3 === 3 ? "Yes" : "No");
 
 //6
 
-function vehicle(color, code, age) {
-  if (code === 1 && age > 2) {
-    console.log('a ' + color + ' Used car');
-  }
+function usedVehicle(color, code, age) {
+    if (code === 1 && age > 2) {
+        console.log('a ' + color + ' Used car');
+    }
 }
-vehicle('Blue', 1, 5);
+usedVehicle('Blue', 1, 5);
 
 //7 
 
 let vehicles = [{
     type: 'motorbike'
-  }, {
+}, {
     type: 'caravan'
-  }, {
+}, {
     type: 'bike'
-  }, {
+}, {
     type: 'tractor'
-  }, {
-    type: 'buggy'
-  }
+}, {
+    type: 'car'
+}
 
 ];
 console.log(vehicles);
@@ -93,16 +92,16 @@ console.log(vehicles);
 console.log(vehicles[2].type);
 
 //alternative
-let vehicles0 = [" motorbike's", " caravan's", " bike's", " tractor's", " buggy's "];
+let vehicles0 = [" motorbikes", " caravans", " bikes", " tractors", " cars "];
 console.log(vehicles0);
 console.log(vehicles0[2]);
 
 //9
 
 function vehicle(color, code, type) {
-  if (code === 3 && type === 1) {
-    console.log('a ' + color + ' new ' + vehicles[2].type);
-  }
+    if (code === 3 && type === 1) {
+        console.log('a ' + color + ' new ' + vehicles[2].type);
+    }
 }
 vehicle('Green', 3, 1);
 
@@ -110,14 +109,14 @@ vehicle('Green', 3, 1);
 let advertisingText = "Amazing Joe's Garage, we service :"
 
 for (let i = 0; i < vehicles.length; i++) {
-  console.log(advertisingText + vehicles0 + "and car's.");
+    console.log(advertisingText + vehicles0);
 }
 
 //11
 vehicles0.push("boat");
 
 vehicles.push({
-  type: 'boat'
+    type: 'boat'
 });
 
 //12
@@ -125,10 +124,10 @@ let emptyObject = {};
 
 //13
 let ourTeachers = {
-  ivana: "",
-  unmesh: "",
-  "Arco & Vincent": "",
-  jim: "",
+    ivana: "",
+    unmesh: "",
+    "Arco & Vincent": "",
+    jim: "",
 };
 
 console.log(ourTeachers);
@@ -152,10 +151,10 @@ console.log(z == x);
 //16
 
 let o1 = {
-  foo: 'bar'
+    foo: 'bar'
 };
 let o2 = {
-  foo: 'bar'
+    foo: 'bar'
 };
 let o3 = o2;
 console.log(o1);
@@ -163,13 +162,13 @@ console.log(o2);
 console.log(o3);
 
 o2 = {
-  foo2: 'bar2'
+    foo2: 'bar2'
 };
 console.log(o2);
 console.log(o3);
 
 o1 = {
-  foo3: 'bar3'
+    foo3: 'bar3'
 };
 console.log(o1);
 console.log(o3);
